@@ -67,7 +67,7 @@ try:
             GPIO.setmode(
                 GPIO.BOARD
             )  # IO channels are identified by header connector pin numbers. Pin numbers are
-        relay_pins = [18, 22, 24, 26, 32, 36, 38, 40, 19, 21, 23, 29, 31, 33, 35, 37]
+        relay_pins = [40, 37, 38, 35, 36, 33, 32, 31, 26, 29, 24, 23, 22, 21, 18, 19]
         for i in range(len(relay_pins)):
             try:
                 relay_pins[i] = gv.pin_map[relay_pins[i]]
