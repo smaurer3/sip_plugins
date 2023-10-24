@@ -10,6 +10,12 @@ This is free software: you can redistribute it and/or modify it under the terms 
 These programs are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 <http://opensource.org/licenses/gpl-3.0.html>
 ******************
+backup_settings
+---------
+This plugin allows remote access (download and upload) of all the 
+settings data necessary for SIP configuration.  This facilitates complete rebuild or
+replacement of the system without losing any SIP settings or log data.
+
 buzzer
 ---------
 This plugin has been created to provide simple audio feedback.  This plugin is intended to be controlled through other
@@ -33,6 +39,12 @@ email_adj
 ----------
 Sends status email to google email account. **NOTE: This plugin runs under Python2x only**.  
 may use obsolete code - see **sip_email** plugin for updated version.
+
+flow
+----------
+Allows the addition of a water flow sensor to enable real-time flow data and logging of water usage.
+Requires SIP v4.1.46 (or later) or the most current version of the plugin_manager from the plugins list.
+Requires Python 3.
 
 keypad
 ----------
@@ -86,6 +98,10 @@ mqtt_zones
 -------------
 Relies on MQTT, broadcasts the current status of all zones.
 
+node_red
+-------------
+Under development. Not fully documented. Use with caution.
+
 pcf857x_plugin
 ----------
 Provides an easy, inexpensive solution for adding a large number of stations.
@@ -94,6 +110,10 @@ Requires Python 3.
 pcf_8591_adj
 ----------
 Read sensor data (temp or voltage) from I2C PCF8591 ADC/DAC
+
+plugin_manager
+----------
+Allows SIP to install plugins (installed by default)
 
 pressure_adj
 ----------
@@ -140,6 +160,11 @@ sms_adj
 ----------
 Control your SIP using SMS (Short Message Service)
 
+sms_plivo
+----------
+Allows plugins that are configured to this messaging framework to send SMS and voice messages through the [Plivo](https://www.plivo.com) service.
+Requires Python 3 and a Plivo account.
+
 ssd1306
 ----------
 Plugin for SSD1306 128x64 pixel display connected to I2C interface.
@@ -157,3 +182,7 @@ Run "pip install python-telegram-bot --upgrade" before installing this plugin.
 weather_level_adj
 ----------
 Adjust irrigation time based on weather forecast
+
+advance_control
+----------
+Plug-in to control valves in shelly, in the future son-off will be supported and more shelly versions. Use HTTP DD commands.
